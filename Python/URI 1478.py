@@ -5,7 +5,7 @@ while True:
         break
     else:
         a[0][0] = 0
-        aux = 0;
+        aux = 0
         while True:
             for i in range(aux, n):
                 if i == aux:
@@ -17,7 +17,7 @@ while True:
             aux = aux + 1
             if aux == n:
                 break
-        aux = 1;
+        aux = 1
         for i in range(1, n):
             for j in range(aux):
                 a[i][j] = a[i-1][j] + 1
