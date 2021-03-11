@@ -1,66 +1,54 @@
-n = int(input())
+def winner(a, b, cont):
+    if a == 'tesoura' and b == 'papel':
+        print('Caso #{}: Bazinga!'.format(cont))
+    if a == 'papel' and b == 'pedra':
+        print('Caso #{}: Bazinga!'.format(cont))
+    if a == 'pedra' and b == 'lagarto':
+        print('Caso #{}: Bazinga!'.format(cont))
+    if a == 'lagarto' and b =='Spock':
+        print('Caso #{}: Bazinga!'.format(cont))
+    if a == 'Spock' and b == 'tesoura':
+        print('Caso #{}: Bazinga!'.format(cont))
+    if a == 'tesoura' and b == 'lagarto':
+        print('Caso #{}: Bazinga!'.format(cont))
+    if a == 'lagarto' and b == 'papel':
+        print('Caso #{}: Bazinga!'.format(cont))
+    if a == 'papel' and b == 'Spock':
+        print('Caso #{}: Bazinga!'.format(cont))
+    if a == 'Spock' and b == 'pedra':
+        print('Caso #{}: Bazinga!'.format(cont))
+    if a == 'pedra' and b == 'tesoura':
+        print('Caso #{}: Bazinga!'.format(cont))
 
-for i in range(n):
-    sheldon, raj = input().split(" ", 1)
-    if sheldon == raj:
-        print('Caso #{}: De novo!'.format(n))
-    else:
-        if sheldon == 'tesoura' and raj == 'papel':
-            print('Caso #{}: Bazinga'.format(n))
-        else:
-            if raj == 'tesoura' and sheldon == 'papel':
-                print('Caso #{}: Raj trapaceou!'.format(n))
-            else:
-                if sheldon == 'papel' and raj == 'pedra':
-                    print('Caso #{}: Bazinga'.format(n))
-                else:
-                    if raj == 'papel' and sheldon == 'pedra':
-                        print('Caso #{}: Raj trapaceou!'.format(n))
-                    else:
-                        if sheldon == 'pedra' and raj == 'lagarto':
-                            print('Caso #{}: Bazinga'.format(n))
-                        else:
-                            if raj == 'pedra' and sheldon == 'lagarto':
-                                print('Caso #{}: Raj trapaceou!'.format(n))
-                            else:
-                                if sheldon == 'lagarto' and raj == 'spock':
-                                    print('Caso #{}: Bazinga'.format(n))
-                                else:
-                                    if raj == 'lagarto' and sheldon == 'spock':
-                                        print('Caso #{}: Raj trapaceou!'.format(n))
-                                    else:
-                                        if sheldon == 'spock' and raj == 'tesoura':
-                                            print('Caso #{}: Bazinga'.format(n))
-                                        else:
-                                            if raj == 'spock' and sheldon == 'tesoura':
-                                                print('Caso #{}: Raj trapaceou!'.format(n))
-                                            else:
-                                                if sheldon == 'tesoura' and raj == 'lagarto':                                                        
-                                                    print('Caso #{}: Bazinga'.format(n))
-                                                else:
-                                                    if raj == 'tesoura' and sheldon == 'lagarto':
-                                                        print('Caso #{}: Raj trapaceou!'.format(n))
-                                                    else:
-                                                        if sheldon == 'lagarto' and raj == 'papel':
-                                                            print('Caso #{}: Bazinga'.format(n))
-                                                        else:
-                                                            if raj == 'lagarto' and sheldon == 'papel':
-                                                                print('Caso #{}: Raj trapaceou!'.format(n))
-                                                            else:
-                                                                if sheldon == 'papel' and raj == 'spock':
-                                                                    print('Caso #{}: Bazinga'.format(n))
-                                                                else:                                                                        
-                                                                    if raj == 'papel' and sheldon == 'spock':
-                                                                        print('Caso #{}: Raj trapaceou!'.format(n))
-                                                                    else:
-                                                                        if sheldon == 'spock' and raj == 'pedra':
-                                                                            print('Caso #{}: Bazinga'.format(n))
-                                                                        else:
-                                                                            if raj == 'spock' and sheldon == 'pedra':
-                                                                                print('Caso #{}: Raj trapaceou!'.format(n))
-                                                                            else:
-                                                                                if sheldon == 'pedra' and raj == 'tesoura':
-                                                                                    print('Caso #{}: Bazinga'.format(n))
-                                                                                else:
-                                                                                    if raj == 'pedra' and sheldon == 'tesoura':
-                                                                                        print('Caso #{}: Raj trapaceou!'.format(n))
+    if b == 'tesoura' and a == 'papel':
+        print('Caso #{}: Raj trapaceou!'.format(cont))
+    if b == 'papel' and a == 'pedra':
+        print('Caso #{}: Raj trapaceou!'.format(cont))
+    if b == 'pedra' and a == 'lagarto':
+        print('Caso #{}: Raj trapaceou!'.format(cont))
+    if b == 'lagarto' and a =='Spock':
+        print('Caso #{}: Raj trapaceou!'.format(cont))
+    if b == 'Spock' and a == 'tesoura':
+        print('Caso #{}: Raj trapaceou!'.format(cont))
+    if b == 'tesoura' and a == 'lagarto':
+        print('Caso #{}: Raj trapaceou!'.format(cont))
+    if b == 'lagarto' and a == 'papel':
+        print('Caso #{}: Raj trapaceou!'.format(cont))
+    if b == 'papel' and a == 'Spock':
+        print('Caso #{}: Raj trapaceou!'.format(cont))
+    if b == 'Spock' and a == 'pedra':
+        print('Caso #{}: Raj trapaceou!'.format(cont))
+    if b == 'pedra' and a == 'tesoura':
+        print('Caso #{}: Raj trapaceou!'.format(cont))
+   
+    if a == b:
+        print('Caso #{}: De novo!'.format(cont))
+
+
+def main():
+    n = int(input())
+    for i in range(n):
+        s, r = input().split()
+
+        winner(s, r, i+1)
+main()

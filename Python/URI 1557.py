@@ -42,3 +42,12 @@ while True:
                         tx += " %8d" %a[i][j]
                 print(tx[1:])
             print("")  
+            T = len(str(a[n-1][n-1]))
+            for i in range(n):
+                for j in range(n):
+                    a[i][j] = str(a[i][j])
+                    while len(a[i][j]) < T:
+                        a[i][j] = ' ' + a[i][j]
+                A = ' '.join(a[i])
+                print(A)
+            print() 
