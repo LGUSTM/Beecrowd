@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 quote = "LIFE IS NOT A PROBLEM TO BE SOLVED"
 
 entrada = int(input())

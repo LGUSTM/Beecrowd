@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 n = 12
 soma = 0
 avg = 0

@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 while True:
     n = int(input())
     a = [[0] * n for i in range(n)]

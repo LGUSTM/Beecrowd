@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 lista = []
 
 for i in range(0, 20):

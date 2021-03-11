@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 par = []
 impar = []
 qtdepar = 0

@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 resultado = 0
 cont = 0
 

@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 lista = []
 i = 0
 

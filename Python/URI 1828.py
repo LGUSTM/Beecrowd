@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 def winner(a, b, cont):
     if a == 'tesoura' and b == 'papel':
         print('Caso #{}: Bazinga!'.format(cont))

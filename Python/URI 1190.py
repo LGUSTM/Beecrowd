@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 a = []
 soma = 0
 

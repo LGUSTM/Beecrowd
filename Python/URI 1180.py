@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 posicao = 0
 
 T = int(input())

@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 qtdecasos = int(input())
 
 for i in range(qtdecasos):

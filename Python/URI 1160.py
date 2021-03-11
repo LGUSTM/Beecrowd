@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 t = int(input())
 
 for i in range(0,t):
