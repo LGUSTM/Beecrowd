@@ -52,4 +52,4 @@ while True:
                         a[i][j] = ' ' + a[i][j]
                 A = ' '.join(a[i])
                 print(A)
-            print() 
+            print()
