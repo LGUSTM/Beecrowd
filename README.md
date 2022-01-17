@@ -4,7 +4,7 @@ This project contains the solutions of [Beecrowd Judge](https://www.beecrowd.com
 
 My main focus with this repository is learn and pratice algorithms, programming logic and SQL. 
 
-For make this happens I used these technologies:
+To make this happens I used these technologies:
 * [C](https://github.com/LGUSTM/Beecrowd/tree/main/C)
 * [Python](https://github.com/LGUSTM/Beecrowd/tree/main/Python)
 * [JavaScript](https://github.com/LGUSTM/Beecrowd/tree/main/JavaScript)
