@@ -1,0 +1,1 @@
+SELECT MAX(price) max, MIN(price) min FROM products;

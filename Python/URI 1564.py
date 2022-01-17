@@ -9,4 +9,4 @@ while True:
         else:
             print("vai ter duas!")
     except EOFError:
-        break;
+        break
